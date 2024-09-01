@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Function call</title>
+
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="container-fluid" align="center"pt-4>
+
+
+    <h1 class="hedding" id="headingname">DILEEP</h1>
+    <br><br>
+    <button class="button btn-primary" id="buttonchange" type="button" name="button" onclick=" ChangeheaddingStyle()">Change Heading</button>
+</div>
+    <script type="text/javascript">
+      let headingName = document.getElementById("headingname");
+      let buttonChange = document.getElementById("buttonchange");
+
+      let headdingChaned = true;
+
+function ChangeheaddingStyle(){
+
+  if (headdingChaned === true) {
+      headingName.textContent="MS DILEEP";
+      headingName.style.color="blue";
+      headingName.style.fontSize="35px";
+      headingName.style.fontFamily="cursive";
+      headingName.style.fontWieght="800";
+      headingName.style.backgroundColor="#87cefa";
+      headingName.style.textDecoration="bold";
+      headingName.style.textalign="center";
+      headdingChaned = false;
+  }
+
+  else {
+    headingName.textContent="DILEEP";
+    headingName.style.color="black";
+    headingName.style.backgroundColor="white";
+    headingName.style.fontSize="30px";
+    headingName.style.fontFamily="serif";
+    headingName.style.textDecoration="bold";
+    headdingChaned = true;
+  }
+}
+    </script>
+  </body>
+</html>

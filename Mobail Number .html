@@ -1,0 +1,44 @@
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Number Check</title>
+    <style>
+        .bd-container{
+            background-color: aqua;
+            height: 100vh;
+            width: auto;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .number-text{
+            margin-top: 50px;
+            margin: block;
+            margin: 20px;
+            pointer-events: fill;
+        }
+    </style>
+</head>
+<body>
+    <div class="bd-container">
+        <b>Mobile Number :</b>
+        <input class="number-text" id="numberText" type="text">
+        <button onclick="validateMobileNumber()">Check</button>
+    </div>
+
+    <script>
+        function validateMobileNumber() {
+            let numberTextEl = document.getElementById("numberText");
+            let numberTextValue = numberTextEl.value;
+
+            if (numberTextValue.length === 10) {
+                alert("Valid Number");
+            } else {
+                alert("Invalid, Please Enter exactly 10 digits of mobile number");
+            }
+        }
+    </script>
+</body>
+</html>

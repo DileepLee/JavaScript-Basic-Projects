@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button style="backgroung-color: rgb(255, 0, 0)" class="btn btn-primary" id="button">Greet Button</button>
+    <p style="color: red; font-family: 'Courier New', Courier, monospace;font-size: 20px; font-weight: 800; font-style: italic;" id="phara"></p>
+
+    <script>
+        let buttonEl = document.getElementById("button");
+        let pharaEl = document.getElementById("phara");
+        
+
+        buttonEl.addEventListener("click", function(){
+            pharaEl.textContent = "Hi Dileep, Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.";
+        });
+    </script>
+</body>
+</html>
